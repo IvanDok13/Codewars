@@ -1,0 +1,13 @@
+let encryption = (message) => {
+  let i = 0;
+  let result = '';
+   while (i <= message.length-1) {
+     if (message[i] === ' ') {
+       result += '  ';
+     } else {
+       result += CHAR_TO_MORSE[message[i]] + ' ';
+     }
+       i++;
+   }
+  return result.trim();
+}
