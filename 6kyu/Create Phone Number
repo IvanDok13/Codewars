@@ -1,0 +1,22 @@
+function createPhoneNumber(numbers){
+  let phone = '(';
+  for (let i = 0; i < numbers.length; i++) {
+    if (i < 2) phone += numbers[i];
+    if (i === 2) phone += numbers[i] + ')' + ' ';
+    if (i > 2 && i < 5) phone += numbers[i];
+    if (i === 5) phone += numbers[i] + '-';
+    if (i > 5) phone += numbers[i];
+  }
+  return phone;
+}
+
+//OR
+
+function createPhoneNumber(numbers){
+  let phone = "(xxx) xxx-xxxx";
+  
+  for(let i = 0; i < numbers.length; i++) {
+    phone = phone.replace('x', numbers[i]);
+  }
+  return phone;
+}
