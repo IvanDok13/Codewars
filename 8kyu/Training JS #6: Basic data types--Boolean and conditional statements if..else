@@ -1,0 +1,20 @@
+//The first solution
+
+function trueOrFalse(val){
+  return Boolean(val).toString();
+}
+
+//The second solution
+function trueOrFalse(val){
+  return !val ? 'false':'true'
+}
+
+//The third solution
+function trueOrFalse(val){
+  if (val == false || 
+      val == null || 
+      val == undefined ){
+      return 'false';
+  }
+  return 'true'
+}
