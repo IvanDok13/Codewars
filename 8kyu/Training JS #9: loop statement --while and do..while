@@ -1,0 +1,9 @@
+function padIt(str,n){
+  let i = 1;
+  do {
+    if (i % 2) str = '*' + str;
+    else str += '*';
+    i++;
+  } while (i <= n)
+  return str;
+}
