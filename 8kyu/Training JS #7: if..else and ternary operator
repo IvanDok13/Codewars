@@ -1,0 +1,8 @@
+function saleHotdogs(n){
+  let price = 0;
+  if (n < 5) price += 100;
+  else if (n >= 5 && n < 10) price += 95;
+  else price += 90;
+ 
+  return price * n;
+}
