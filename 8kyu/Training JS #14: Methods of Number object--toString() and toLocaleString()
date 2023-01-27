@@ -1,0 +1,12 @@
+function colorOf(r,g,b){
+  let rRes = r;
+  let gRes = g;
+  let bRes = b;
+  if((r.toString(16)).length < 2) rRes = '' + 0 + r.toString(16);
+  else rRes = r.toString(16);
+  if((g.toString(16)).length < 2) gRes = '' + 0 + g.toString(16);
+  else gRes = g.toString(16);
+  if((b.toString(16)).length < 2) bRes = '' + 0 + b.toString(16);
+  else bRes = b.toString(16);
+  return '#' + rRes + gRes + bRes; 
+}
