@@ -1,0 +1,7 @@
+function firstToLast(str,c){
+  let firstIn = str.indexOf(c);
+  let lastIn = str.lastIndexOf(c);
+  if (firstIn === -1 && lastIn === -1) return -1;
+  let sum = lastIn - firstIn;
+  return sum; 
+}
