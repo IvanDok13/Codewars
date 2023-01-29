@@ -1,0 +1,8 @@
+function splitAndMerge(string, separator) {
+  let charArr = [], arrJoin = [];
+  let byWords = string.split(' ');
+  for (let i = 0; i < byWords.length; i++) charArr.push(byWords[i].split(''));
+  for (let i = 0; i < charArr.length; i++) arrJoin.push(charArr[i].join(separator));
+  return arrJoin.join(' ');
+}
+console.log(splitAndMerge('My name is John', '-'));
