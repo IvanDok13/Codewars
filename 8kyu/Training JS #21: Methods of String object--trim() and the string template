@@ -1,0 +1,5 @@
+function fiveLine(s){
+  let line = s.trim();
+  let res = `${line}\n${line}${line}\n${line}${line}${line}\n${line}${line}${line}${line}\n${line}${line}${line}${line}${line}`;
+  return res;
+}
