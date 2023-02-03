@@ -1,7 +1,17 @@
+//Task:
+
+Write a function that will encrypt a given sentence into International Morse Code, both the input and out puts will be strings.
+Characters should be separated by a single space. Words should be separated by a triple space.
+For example, "HELLO WORLD" should return -> ".... . .-.. .-.. --- .-- --- .-. .-.. -.."
+To find out more about Morse Code follow this link: https://en.wikipedia.org/wiki/Morse_code
+A preloaded object/dictionary/hash called CHAR_TO_MORSE will be provided to help convert characters to Morse Code.
+
+//Solution:
+
 let encryption = (message) => {
   let i = 0;
   let result = '';
-   while (i <= message.length-1) {
+   while (i <= message.length - 1) {
      if (message[i] === ' ') {
        result += '  ';
      } else {
@@ -11,3 +21,17 @@ let encryption = (message) => {
    }
   return result.trim();
 }
+console.log(encryption("HELLO WORLD")); //".... . .-.. .-.. ---   .-- --- .-. .-.. -.."
+
+//OR:
+
+let encryption = (message) => {
+  let i = 0;
+  let result = '';
+  for (let i = 0; i < message.length; i++) {
+     if (message[i] === ' ') result += '  ';
+     else result += CHAR_TO_MORSE[message[i]] + ' ';
+   }
+  return result.trim();
+}
+console.log(encryption("HELLO WORLD")); //".... . .-.. .-.. ---   .-- --- .-. .-.. -.."
