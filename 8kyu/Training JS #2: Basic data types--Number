@@ -7,7 +7,6 @@ the function equal1 is completed, please refer to this example to complete the f
 When you have finished the work, click "Run Tests" to see if your code is working properly.
 In the end, click "Submit" to submit your code pass this kata.
 
-
 //Solution:
 
 let v1 = 50,
