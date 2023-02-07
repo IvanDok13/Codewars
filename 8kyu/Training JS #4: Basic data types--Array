@@ -24,7 +24,7 @@ function getLast(arr){
 }
 
 function pushElement(arr){
-  var el=1;
+  let el=1;
   arr.push(el);
   return arr;
 }
