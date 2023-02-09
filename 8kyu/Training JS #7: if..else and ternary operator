@@ -10,6 +10,8 @@ n >= 5 and n < 10	95
 n >= 10	90
 You can use if..else or ternary operator to complete it.
 
+//Solution:
+
 function saleHotdogs(n){
   let price = 0;
   if (n < 5) price += 100;
@@ -17,3 +19,4 @@ function saleHotdogs(n){
   else price += 90;
   return price * n;
 };
+console.log(saleHotdogs(100)); //9000;
