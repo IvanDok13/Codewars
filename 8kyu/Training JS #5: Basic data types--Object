@@ -6,7 +6,7 @@ Give you a function animal, accept 1 parameter:obj like this:
 
 //Solution:
 
-function animal(obj){
-let answ = `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
-  return answ;
-};
+                              function animal(obj){
+                              let answ = `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+                                return answ;
+                              };
