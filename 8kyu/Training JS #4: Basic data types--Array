@@ -11,25 +11,25 @@ Complete the functions using arr inside the function bodies.
 
 //Solution:
 
-function getLength(arr){
-  return arr.length;
-}
+                            function getLength(arr){
+                              return arr.length;
+                            }
 
-function getFirst(arr){
-  return arr[0];
-}
+                            function getFirst(arr){
+                              return arr[0];
+                            }
 
-function getLast(arr){
-  return arr[arr.length - 1];
-}
+                            function getLast(arr){
+                              return arr[arr.length - 1];
+                            }
 
-function pushElement(arr){
-  let el=1;
-  arr.push(el);
-  return arr;
-}
+                            function pushElement(arr){
+                              let el=1;
+                              arr.push(el);
+                              return arr;
+                            }
 
-function popElement(arr){
-  arr.pop();
-  return arr;
-}
+                            function popElement(arr){
+                              arr.pop();
+                              return arr;
+                            }
