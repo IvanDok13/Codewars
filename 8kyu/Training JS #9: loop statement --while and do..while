@@ -1,3 +1,5 @@
+//Solution:
+
 function padIt(str,n){
   let i = 1;
   do {
@@ -6,4 +8,4 @@ function padIt(str,n){
     i++;
   } while (i <= n)
   return str;
-}
+};
