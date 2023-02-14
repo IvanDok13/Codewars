@@ -2,11 +2,12 @@
 
 function isolateIt(arr) {
   let res = arr.map((_, i, arr) => {
+     let result =[];
     if (arr[i].length % 2 === 0) {
       let newArr = arr[i].split('');
-      console.log(newArr);
       arr[i] = newArr.splice((arr[i].length / 2), 0, '|');
-      console.log(newArr);
+      result +=newArr.join('');
+      console.log(result);
 
   } 
 //     else {
@@ -18,9 +19,10 @@ function isolateIt(arr) {
 //           res = aver / len;
 //       arr.splice(res, 1, '|'); 
 //   }
+    return result
   })
   
-  return newArr;
+  return res;
 }
 
 console.log(isolateIt(["abcd","efgh"]));
