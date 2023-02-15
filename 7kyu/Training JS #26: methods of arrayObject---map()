@@ -1,19 +1,19 @@
 //Experiment
 
 function isolateIt(arr) {
+  let copy = arr.slice();
   let res = arr.map((_, i, arr) => {
-    let copy = arr.slice();
     let newArr = copy[i].split(''); 
     let result =[];
     let sum = 0;
     let average;
+    console.log(newArr);
+    
     if (arr[i].length % 2) {
-//       console.log(arr[i].length); 
-      sum += i;
-      console.log(sum);
+      for (let i = 0; i < newArr.length; i++) {
+        sum += i;
+      }
       average = sum / arr[i].length; 
-//       console.log(average);
-
       arr[i] = newArr.splice(average, 1, '|');
     } else {
       arr[i] = newArr.splice((arr[i].length / 2), 0, '|');
