@@ -2,26 +2,25 @@
 
 function isolateIt(arr) {
   let res = arr.map((_, i, arr) => {
-     let result =[];
-    if (arr[i].length % 2 === 0) {
-      let newArr = arr[i].split('');
-      arr[i] = newArr.splice((arr[i].length / 2), 0, '|');
-      result +=newArr.join('');
-      console.log(result);
+    let copy = arr.slice();
+    let newArr = copy[i].split(''); 
+    let result =[];
+    let sum = 0;
+    let average;
+    if (arr[i].length % 2) {
+//       console.log(arr[i].length); 
+      sum += i;
+      console.log(sum);
+      average = sum / arr[i].length; 
+//       console.log(average);
 
-  } 
-//     else {
-      
-//     let aver = 0, res, len;
-//           aver += i;
-      
-//      len = arr[i].length;
-//           res = aver / len;
-//       arr.splice(res, 1, '|'); 
-//   }
+      arr[i] = newArr.splice(average, 1, '|');
+    } else {
+      arr[i] = newArr.splice((arr[i].length / 2), 0, '|');
+    }
+    result +=newArr.join('');
     return result
   })
-  
   return res;
 }
 
