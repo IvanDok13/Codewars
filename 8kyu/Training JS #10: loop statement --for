@@ -15,4 +15,5 @@ function pickIt(arr){
   }  
   return [odd,even];
 }
+console.log(pickIt([8, 1, 5, 4, 6, 1, 1]));    // [[1, 5, 1, 1],[8, 4, 6]]
 
