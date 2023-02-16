@@ -13,18 +13,18 @@ Finally, return the padded string.
 
 //Solution:
 
-function padIt(str,n){
-  let i = 1;
-  do {
-    if (i % 2) str = '*' + str;
-    else str += '*';
-    i++;
-  } while (i <= n)
-  return str;
-};
+                    function padIt(str,n){
+                      let i = 1;
+                      do {
+                        if (i % 2) str = '*' + str;
+                        else str += '*';
+                        i++;
+                      } while (i <= n);
+                      return str;
+                    };
 
-console.log(padIt("a",1)); //"*a"
-console.log(padIt("a",2)); //"*a*"
-console.log(padIt("a",3)); //"**a*"
-console.log(padIt("a",4)); //"**a**"
-console.log(padIt("a",5)); //"***a**"
+                    console.log(padIt("a",1)); //"*a"
+                    console.log(padIt("a",2)); //"*a*"
+                    console.log(padIt("a",3)); //"**a*"
+                    console.log(padIt("a",4)); //"**a**"
+                    console.log(padIt("a",5)); //"***a**"
