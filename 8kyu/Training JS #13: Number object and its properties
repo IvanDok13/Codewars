@@ -1,3 +1,5 @@
+//Solution:
+
 function whatNumberIsIt(n){
   let answer = '';
   if (isNaN(n) === true) return answer = 'Input number is Number.NaN';
