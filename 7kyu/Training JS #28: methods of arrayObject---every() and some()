@@ -1,15 +1,18 @@
-function mirrorImage(arr){
+function mirrorImage(arr) {
   let resArr = [];
-  arr.some((x,i)=>{
+  let copy = arr.slice();
+  copy.some((x,i)=>{
+    let reverseB = '', a, b;
     a=x;
-      console.log(a);
-    b=arr[i+1];
-      console.log(b);
-//   b = b.reverse();
-    if (a === b) resArr.push(a, b);
-    return resArr;
+    b=copy[i+1];
+    reverseB += b;
+    reverseB = reverseB.split('').reverse().join('');
+    if (a == reverseB) return resArr.push(a, b);
     })
+  if (resArr[0] == undefined) resArr.push(-1, -1);
   return resArr;
 }
 
 console.log(mirrorImage([11,22,33,33,22,11])) 
+console.log(mirrorImage([454,86,57,75,16,88])) 
+console.log(mirrorImage([454,0,57,0,16,88]))
