@@ -1,0 +1,15 @@
+function mirrorImage(arr){
+  let resArr = [];
+  arr.some((x,i)=>{
+    a=x;
+      console.log(a);
+    b=arr[i+1];
+      console.log(b);
+//   b = b.reverse();
+    if (a === b) resArr.push(a, b);
+    return resArr;
+    })
+  return resArr;
+}
+
+console.log(mirrorImage([11,22,33,33,22,11])) 
