@@ -28,3 +28,9 @@ That's all of your work. My work is print your color code on your screen.
                               else bRes = b.toString(16);
                               return '#' + rRes + gRes + bRes; 
                             }
+                            console.log(colorOf(255,0,0)) // "#ff0000"
+                            console.log(colorOf(0,111,0)) // "#006f00"
+                            console.log(colorOf(1, 2 ,3)) // "#010203"
+
+
+
