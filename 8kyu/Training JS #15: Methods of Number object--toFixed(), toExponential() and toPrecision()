@@ -14,11 +14,11 @@ howManySmaller([3.1288,3.1212,3.1205],3.1212) should return 2
 
 //Solution:
 
-function howManySmaller(arr,n) {
-  let count = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].toFixed(2) < n) count++;
-  }
-  return count;
-}
+                    function howManySmaller(arr,n) {
+                      let count = 0;
+                      for (let i = 0; i < arr.length; i++) {
+                        if (arr[i].toFixed(2) < n) count++;
+                      }
+                      return count;
+                    }
 
