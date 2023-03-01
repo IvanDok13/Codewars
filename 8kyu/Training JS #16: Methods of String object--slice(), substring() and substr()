@@ -16,14 +16,14 @@ cutIt(["codewars","javascript","java"]) should return ["code","java","java"]
 
 //Solution:
 
-function cutIt(arr){
-  let arrMax = arr[0].length, cutArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length < arrMax) arrMax = arr[i].length;
-  }
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length > arrMax) cutArr.push(arr[i].slice(0, arrMax));
-    else cutArr.push(arr[i]);
-  }
-  return cutArr;
-}
+                    function cutIt(arr){
+                      let arrMax = arr[0].length, cutArr = [];
+                      for (let i = 0; i < arr.length; i++) {
+                        if (arr[i].length < arrMax) arrMax = arr[i].length;
+                      }
+                      for (let i = 0; i < arr.length; i++) {
+                        if (arr[i].length > arrMax) cutArr.push(arr[i].slice(0, arrMax));
+                        else cutArr.push(arr[i]);
+                      }
+                      return cutArr;
+                    }
