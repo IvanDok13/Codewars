@@ -14,12 +14,12 @@ alienLanguage("Hello World") should return "HELLo WORLd"
 
 //Solution:
 
-                              function alienLanguage(str){
+                              function alienLanguage(str) {
                                 let words = str.toUpperCase().split(' '), arrWord = [], arrChar=[], res = [];
                                 for (let i = 0; i < words.length; i++) {
                                   arrWord.push(words[i].slice(0, words[i].length-1));
                                   arrChar.push(words[i].slice(-1).toLowerCase());
-                                  res.push(arrWord[i]+arrChar[i])
+                                  res.push(arrWord[i]+arrChar[i]);
                                     }
                                 return res.join(' ');
                               }
