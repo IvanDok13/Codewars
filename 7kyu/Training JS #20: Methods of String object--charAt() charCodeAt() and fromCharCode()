@@ -19,7 +19,7 @@ will appear only after clicking on "Submit".
 This task may be more difficult for beginners. Good Luck!                                 
  // Solution:
  
-                                  function topSecret(str){
+                                  function topSecret(str) {
                                     let char = str.split(''), res = [];
                                     for (let i = 0; i < char.length; i++) {
                                       if (char[i].charCodeAt() < 65 || char[i].charCodeAt() > 122) continue;
