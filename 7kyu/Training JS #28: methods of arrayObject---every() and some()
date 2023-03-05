@@ -1,3 +1,5 @@
+//Solution:
+
 function mirrorImage(arr) {
   let resArr = [];
   let copy = arr.slice();
