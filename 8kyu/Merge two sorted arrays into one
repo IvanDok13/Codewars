@@ -18,8 +18,7 @@ Examples (input -> output)
 
 //Solution: EXPERIMENTAL
 
-                    function mergeArrays(arr1, arr2) {
-                        if (arr1[0] == 'undefined' && arr2[0] == 'undefined') return [];
-                        let res = arr1.reduce((a, b, i, arr) => a.concat(arr1, arr2), []).sort((a, b) => a-b);
-                        return [...new Set(res)];
-                      }
+                  function mergeArrays(arr1, arr2) {
+                    let res = arr1.concat(arr1, arr2).sort((a, b) => a-b);
+                    return [...new Set(res)];
+                  }
