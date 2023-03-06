@@ -16,10 +16,10 @@ Examples (input -> output)
 
 * [1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12] -> [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
 
-//Solution:
+//Solution: EXPERIMENTAL
 
                     function mergeArrays(arr1, arr2) {
-                      if (arr1[0] == 'undefined' && arr2[0] == 'undefined') return [];
-                      let res = arr1.reduce((a, b, i, arr) => a.concat(arr1[i], arr2[i]), []).sort((a, b) => a-b);
-                      return [...new Set(res)];
-                    }
+                        if (arr1[0] == 'undefined' && arr2[0] == 'undefined') return [];
+                        let res = arr1.reduce((a, b, i, arr) => a.concat(arr1, arr2), []).sort((a, b) => a-b);
+                        return [...new Set(res)];
+                      }
