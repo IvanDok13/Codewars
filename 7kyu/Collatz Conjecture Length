@@ -12,3 +12,20 @@ For example, if n = 20, the resulting sequence will be:
 [ 20, 10, 5, 16, 8, 4, 2, 1 ]
 Write a program that will output the length of the Collatz Conjecture for any given n.
 In the example above, the output would be 8.
+
+//Solution:
+
+function collatz(n) {
+  let arr = [n];
+  for (let i = 0; n !== 1; i++) {
+  if (n % 2) {
+     arr.push(n * 3 + 1);
+     n = n * 3 + 1;
+  } else {
+    arr.push(n / 2);
+    n /= 2;
+  }
+  }  
+  return arr.length;
+}
+console.log(collatz(3));
