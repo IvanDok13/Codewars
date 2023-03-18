@@ -22,17 +22,17 @@ Note that 121 has twice the digit 1.
 
 //Solution:
 
-function nbDig(n, d) {
-  let arr = [];
-  let length;
-  let num;
-  let counter = 0;
-  for (let i = 0; i <= n; i++) {
-    arr.push(i*i);
-    num = arr[i] + '';
-    for (let j = 0; j < num.length; j++) {
-    if (num[j] == d) counter++; 
-    }
-  }
-  return counter;
-}
+                        function nbDig(n, d) {
+                          let arr = [];
+                          let length;
+                          let num;
+                          let counter = 0;
+                          for (let i = 0; i <= n; i++) {
+                            arr.push(i*i);
+                            num = arr[i] + '';
+                            for (let j = 0; j < num.length; j++) {
+                            if (num[j] == d) counter++; 
+                            }
+                          }
+                          return counter;
+                        }
