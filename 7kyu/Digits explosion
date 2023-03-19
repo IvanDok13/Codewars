@@ -1,0 +1,5 @@
+//Solution:
+
+function explode(s) {
+  return s.replace(/\d/gi, x => x.repeat(x) );
+}
