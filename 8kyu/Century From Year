@@ -17,4 +17,4 @@ read more about it here
 
 //Solution:
 
-let century = (year) => Math.ceil(year/100);
+                          let century = (year) => Math.ceil(year/100);
