@@ -1,0 +1,3 @@
+//Solution
+
+                        let stringToNumber = str => +str;
