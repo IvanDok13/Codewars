@@ -1,0 +1,7 @@
+//Task:
+
+Return the type of the sum of the two arguments
+
+//Solution:
+
+                        let typeOfSum = (a, b) => typeof (a + b);
