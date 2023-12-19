@@ -1,0 +1,22 @@
+//Task:
+
+he function 'fibonacci' should return an array of fibonacci numbers. The function takes 
+a number as an argument to decide how many no. of elements to produce. If the argument 
+is less than or equal to 0 then return empty array
+
+Example:
+
+fibonacci(4) // should return  [0,1,1,2]
+fibonacci(-1) // should return []
+
+//Solution:
+
+                        function fibonacci(n) {
+                          if (n <= 0) return [];
+                          const arr = [];
+                          for (let i = 0; i < n; i += 1) {
+                            if (i < 2) arr.push(i);
+                            else arr.push(arr[i - 1] + arr[i - 2]);
+                          }
+                          return arr;
+                        }
