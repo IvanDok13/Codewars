@@ -18,13 +18,13 @@ In the example above, the output would be 8.
                           function collatz(n) {
                             let arr = [n];
                             for (let i = 0; n !== 1; i++) {
-                            if (n % 2) {
-                               arr.push(n * 3 + 1);
-                               n = n * 3 + 1;
-                            } else {
-                              arr.push(n / 2);
-                              n /= 2;
-                            }
+                              if (n % 2) {
+                                 arr.push(n * 3 + 1);
+                                 n = n * 3 + 1;
+                              } else {
+                                arr.push(n / 2);
+                                n /= 2;
+                              }
                             }  
                             return arr.length;
                           }
